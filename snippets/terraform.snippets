@@ -1,0 +1,11 @@
+##############################
+# AWS
+##############################
+# Provider snippet.
+snippet provider 
+	provider "${1:providertype}" { 
+		region = "${2:region}"
+		shared_credentials_file = "${3:credentials}"
+		profile = "${4:profilename}"
+	}
+
